@@ -91,9 +91,8 @@ const Contact = () => {
           <div className="flex-grow p-6 bg-surface border border-white/5 rounded-2xl flex flex-col justify-center items-center text-center">
             <div className="flex items-center gap-2 text-xs font-mono text-hellfire animate-pulse">
               <span className="w-2 h-2 bg-hellfire rounded-full"></span>
-              UPLINK_ACTIVE
+              
             </div>
-            <p className="text-gray-500 text-[10px] mt-2 font-mono uppercase tracking-[0.2em]">Student @ IJSE Galle</p>
           </div>
         </div>
 
