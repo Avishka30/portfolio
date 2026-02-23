@@ -59,3 +59,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  background-color: var(--color-midnight);
+  color: var(--color-soft-text);
+  margin: 0;
+  
+  /* ADD THIS LINE: This pushes EVERYTHING down 80px */
+  padding-top: 80px; 
+  
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
