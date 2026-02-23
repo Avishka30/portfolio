@@ -95,7 +95,7 @@ const Navbar = () => {
               className="mt-12 flex items-center gap-3 text-xs text-hellfire uppercase tracking-[0.5em]"
             >
                <span className="w-2 h-2 bg-hellfire rounded-full animate-pulse shadow-[0_0_10px_#FF3131]"></span>
-               System_Online
+              
             </motion.div>
           </motion.div>
         )}
