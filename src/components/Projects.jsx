@@ -38,18 +38,19 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
+    <section id="projects" className="py-24 px-6 max-w-6xl mx-auto bg-midnight">
       <div className="flex justify-between items-center mb-12">
-        <h2 className="text-3xl font-bold flex items-center gap-4">
-          <span className="text-electric font-mono text-xl">01.</span> SELECTED_WORKS
+        {/* Updated Numbering to 02 to follow the About section */}
+        <h2 className="text-3xl font-bold flex items-center gap-4 text-white uppercase italic tracking-tighter">
+          <span className="text-hellfire font-mono text-xl not-italic">02.</span> SELECTED_WORKS
         </h2>
 
-        {/* Custom Navigation Icons */}
+        {/* Custom Navigation Icons - Updated to Hellfire */}
         <div className="flex gap-3">
-          <button className="swiper-prev-btn p-3 border border-white/10 rounded-full text-white hover:border-electric hover:text-electric transition-all cursor-pointer">
+          <button className="swiper-prev-btn p-3 border border-white/10 rounded-full text-white hover:border-hellfire hover:text-hellfire transition-all cursor-pointer shadow-sm hover:shadow-[0_0_15px_rgba(255,49,49,0.3)]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
           </button>
-          <button className="swiper-next-btn p-3 border border-white/10 rounded-full text-white hover:border-electric hover:text-electric transition-all cursor-pointer">
+          <button className="swiper-next-btn p-3 border border-white/10 rounded-full text-white hover:border-hellfire hover:text-hellfire transition-all cursor-pointer shadow-sm hover:shadow-[0_0_15px_rgba(255,49,49,0.3)]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </button>
         </div>
@@ -73,29 +74,32 @@ const Projects = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="glow-card p-8 rounded-xl border border-white/5 h-full flex flex-col justify-between group min-h-[380px]">
+            {/* Glow-card class now uses the Crimson/Embers logic from index.css */}
+            <div className="glow-card p-8 rounded-xl border border-white/5 h-full flex flex-col justify-between group min-h-[380px] bg-surface/50">
               <div>
                 <div className="flex justify-between items-start mb-6">
-                  <div className="text-electric">
+                  {/* Icon updated to Hellfire Crimson */}
+                  <div className="text-hellfire">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                   </div>
-                  <div className="flex gap-3 text-gray-400">
-                    <a href={project.github} target="_blank" rel="noreferrer" className="hover:text-electric transition-colors">
+                  <div className="flex gap-3 text-gray-500">
+                    <a href={project.github} target="_blank" rel="noreferrer" className="hover:text-hellfire transition-colors duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </a>
-                    <a href={project.demo} target="_blank" rel="noreferrer" className="hover:text-electric transition-colors">
+                    <a href={project.demo} target="_blank" rel="noreferrer" className="hover:text-hellfire transition-colors duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </a>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-electric transition-colors uppercase tracking-tight">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-hellfire transition-colors duration-300 uppercase tracking-tight text-white">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-400 text-sm leading-relaxed mb-4 font-light">
                   {project.description}
                 </p>
               </div>
-              <div className="text-[10px] font-mono text-electric/70 mt-4 uppercase tracking-[0.2em] border-t border-white/5 pt-4">
+              {/* Tech stack highlight using Hellfire with Ember accents */}
+              <div className="text-[10px] font-mono text-hellfire/80 mt-4 uppercase tracking-[0.2em] border-t border-white/5 pt-4 flex flex-wrap gap-2">
                 {project.tech}
               </div>
             </div>

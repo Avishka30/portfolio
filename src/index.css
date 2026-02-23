@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-midnight: #0B0E14;
-  --color-surface: #151921;
-  --color-electric: #38BDF8;
-  --color-soft-text: #F3F4F6;
+  --color-midnight: #050505;   /* Deep obsidian background */
+  --color-surface: #0f0f0f;    /* Slightly lighter dark for cards */
+  --color-hellfire: #FF3131;   /* Primary crimson accent */
+  --color-embers: #FF5E00;     /* Burnt orange for glows and heat effects */
+  --color-soft-text: #F3F4F6;  /* Clean ash-white for readability */
 }
 
 body {
@@ -13,9 +14,10 @@ body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-/* The 'Dominant' card aesthetic for your React Native and Spring Boot projects */
+/* --- THE 'HELLFIRE' CARD AESTHETIC --- */
 .glow-card {
   border: 1px solid rgba(255, 255, 255, 0.05);
   background-color: var(--color-surface);
@@ -23,43 +25,37 @@ body {
 }
 
 .glow-card:hover {
-  border-color: rgba(56, 189, 248, 0.4);
-  box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+  /* Border shifts to crimson on hover */
+  border-color: rgba(255, 49, 49, 0.4);
+  /* Glowing effect uses the molten orange 'embers' */
+  box-shadow: 0 0 30px rgba(255, 94, 0, 0.12);
   transform: translateY(-8px);
 }
 
 /* --- SWIPER CAROUSEL CUSTOMIZATION --- */
 
-/* Base Bullet Style */
 .swiper-pagination-bullet {
   background: white !important;
   opacity: 0.15 !important;
   transition: all 0.3s ease !important;
 }
 
-/* Active Bullet (The Electric Highlight) */
+/* Active Bullet (The Hellfire Highlight) */
 .swiper-pagination-bullet-active {
-  background: var(--color-electric) !important;
+  background: var(--color-hellfire) !important;
   opacity: 1 !important;
-  width: 24px !important; /* Changes dot to a pill shape for a mobile-app feel */
+  width: 24px !important; 
   border-radius: 4px !important;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 15px rgba(255, 49, 49, 0.6);
 }
 
-/* Pagination Position */
 .swiper-pagination {
   position: relative !important;
   margin-top: 40px;
   bottom: 0 !important;
 }
 
-/* Ensure images in the Hero don't break the layout */
 img {
   max-width: 100%;
   height: auto;
-}
-
-body {
-  /* ... existing styles ... */
-  overflow-x: hidden;
 }
