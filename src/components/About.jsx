@@ -15,15 +15,30 @@ const About = () => {
             <h3 className="text-xl font-bold uppercase tracking-tight">Education</h3>
           </div>
 
-          <div className="relative pl-8 border-l border-white/10 space-y-8">
+          <div className="relative pl-8 border-l border-white/10 space-y-12">
+            {/* IJSE */}
             <div className="relative">
-              <div className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-midnight border-2 border-electric"></div>
+              <div className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-midnight border-2 border-electric shadow-[0_0_10px_#38BDF8]"></div>
               <h4 className="text-softText font-bold">Institute of Software Engineering (IJSE)</h4>
-              <p className="text-electric font-mono text-xs mb-2">Galle, Sri Lanka // 2024 - Present</p>
+              <p className="text-electric font-mono text-[10px] mb-2 uppercase tracking-widest">Galle // 2024-2026  Present</p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Currently pursuing a comprehensive Computer Science curriculum focused on 
-                Enterprise Application Development, Software Architecture, and Full-Stack Engineering.
+                GDSE - Comprehensive curriculum focused on Enterprise Java, 
+                Software Architecture, and Full-Stack Engineering.
               </p>
+            </div>
+
+            {/* A/L */}
+            <div className="relative">
+              <div className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-midnight border-2 border-white/20"></div>
+              <h4 className="text-softText font-bold">G.C.E. Advanced Level (A/L)</h4>
+              <p className="text-gray-500 font-mono text-[10px] mb-2 uppercase tracking-widest">[G/P.De.S.Kularathna College] // Completed</p>
+            </div>
+
+            {/* O/L */}
+            <div className="relative">
+              <div className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-midnight border-2 border-white/20"></div>
+              <h4 className="text-softText font-bold">G.C.E. Ordinary Level (O/L)</h4>
+              <p className="text-gray-500 font-mono text-[10px] mb-2 uppercase tracking-widest">[Gramani Maha Vidyalaya] // Completed</p>
             </div>
           </div>
         </div>
@@ -40,12 +55,12 @@ const About = () => {
           <div className="relative pl-8 border-l border-white/10 space-y-8">
             <div className="relative">
               <div className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-midnight border-2 border-electric shadow-[0_0_10px_#38BDF8]"></div>
-              <h4 className="text-softText font-bold">Full Stack Developer (Academic Projects)</h4>
-              <p className="text-electric font-mono text-xs mb-2">2025 - Present</p>
+              <h4 className="text-softText font-bold">Full Stack Developer (Academic)</h4>
+              <p className="text-electric font-mono text-[10px] mb-2 uppercase tracking-widest">2025 - Present</p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Developing high-performance systems like <span className="text-white">MarineX</span> 
-                and <span className="text-white">SupportFlow</span>. Focused on implementing 
-                layered architectures, secure JWT authentication, and AI-driven features.
+                Engineering high-performance systems like <span className="text-white">MarineX</span>, 
+                <span className="text-white">SupportFlow</span>, and specialized desktop apps 
+                for healthcare using <span className="text-white">JavaFX</span> and <span className="text-white">Spring Boot</span>.
               </p>
             </div>
           </div>
