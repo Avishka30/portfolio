@@ -4,18 +4,57 @@
   --color-midnight: #0B0E14;
   --color-surface: #151921;
   --color-electric: #38BDF8;
-  --color-softText: #F3F4F6;
+  --color-soft-text: #F3F4F6;
 }
 
 body {
   background-color: var(--color-midnight);
-  color: var(--color-softText);
+  color: var(--color-soft-text);
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* The 'Dominant' card aesthetic for your React Native and Spring Boot projects */
 .glow-card {
   border: 1px solid rgba(255, 255, 255, 0.05);
   background-color: var(--color-surface);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glow-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+  transform: translateY(-8px);
+}
+
+/* --- SWIPER CAROUSEL CUSTOMIZATION --- */
+
+/* Base Bullet Style */
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.15 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Active Bullet (The Electric Highlight) */
+.swiper-pagination-bullet-active {
+  background: var(--color-electric) !important;
+  opacity: 1 !important;
+  width: 24px !important; /* Changes dot to a pill shape for a mobile-app feel */
+  border-radius: 4px !important;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+/* Pagination Position */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 40px;
+  bottom: 0 !important;
+}
+
+/* Ensure images in the Hero don't break the layout */
+img {
+  max-width: 100%;
+  height: auto;
 }
