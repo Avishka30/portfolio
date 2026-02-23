@@ -1,6 +1,9 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Projects from './components/Projects' // 1. Import it
+import About from './components/About' // 1. Import
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -11,14 +14,16 @@ function App() {
 
       <Navbar />
       <Hero />
-      <Projects /> {/* 2. Add it here */}
+      <About /> {/* 2. Place it here */}
+      <Projects />
+      <Skills />
+      <Contact />
       
-      {/* Spacer for footer */}
-      <footer className="py-10 text-center text-gray-600 text-xs font-mono">
-        © 2026 KAVINDU AVISHKA // BUILT WITH VITE & TAILWIND
+      <footer className="py-10 text-center border-t border-white/5 opacity-50 text-[10px] font-mono tracking-[0.5em]">
+        DESIGNED & CODED BY KAVINDU AVISHKA // 2026
       </footer>
     </main>
   )
 }
 
-export default App
+export default App;

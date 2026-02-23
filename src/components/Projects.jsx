@@ -8,13 +8,6 @@ import 'swiper/css/navigation';
 const Projects = () => {
   const projects = [
     {
-      title: "Mental Health Management System",
-      tech: "Java | JavaFX | Hibernate | Maven",
-      description: "Comprehensive desktop application with layered architecture. Features role-based access for Admins/Receptionists, session scheduling, and automated billing.",
-      github: "https://github.com/Avishka30/MindWave-Hibernate.git", 
-      demo: "#" 
-    },
-    {
       title: "SupportFlow - AI Ticket System",
       tech: "MERN Stack | TypeScript | Google Gemini",
       description: "AI-powered support system featuring automated ticket categorization and real-time solution suggestions via Gemini AI integration.",
@@ -36,11 +29,11 @@ const Projects = () => {
       demo: "#"
     },
     {
-      title: "Python Web Engine",
-      tech: "Python | BeautifulSoup",
-      description: "High-performance web scraping and data processing engine for automated market research.",
-      github: "#",
-      demo: "#"
+      title: "Mental Health Management System",
+      tech: "Java | JavaFX | Hibernate | Maven",
+      description: "Comprehensive desktop application with layered architecture. Features role-based access for Admins/Receptionists, session scheduling, and automated billing.",
+      github: "https://github.com/Avishka30/MindWave-Hibernate.git", 
+      demo: "#" 
     }
   ];
 
